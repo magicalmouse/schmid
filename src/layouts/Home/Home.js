@@ -6,6 +6,8 @@ import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg'
 import gamestackTexture from 'assets/gamestack-login.png';
 import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import proSkill from 'assets/proskill.jpg';
+import proSkillLarge from 'assets/proskill-large.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -22,11 +24,12 @@ export const Home = () => {
   const intro = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
+  const projectThree = useRef();
   const details = useRef();
 
   useEffect(() => {
-    //const sections = [intro, projectOne, projectTwo, projectThree, details];
-    const sections = [intro, projectOne, projectTwo, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    //const sections = [intro, projectOne, projectTwo, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -118,26 +121,26 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
+      <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
+        title="Professional skills"
+        description="A senior web developer combines technical expertise with creativity, problem-solving skills, and a passion for delivering high-quality web solutions."
+        buttonText="View Skills"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [proSkill, proSkillLarge],
+              placeholder: proSkill,
             },
           ],
         }}
-      /> */}
+      />
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
