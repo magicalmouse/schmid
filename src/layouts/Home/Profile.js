@@ -27,7 +27,7 @@ const ProfileText = ({ visible, titleId }) => (
       I am highly passionate when it comes to learning all sorts of things. That is what
       keeps me going in life. I look at coding as a never-ending challenge, and I will not
       slow down until I feel like I achieved a level of mastery. Then the real fun begins.
-      Until that moment, it is all about self-discipline, continuous learning, and
+      Until that moment, it is all about self-discipline, continuous learning and
       tremendous patience.
     </Text>
   </Fragment>
