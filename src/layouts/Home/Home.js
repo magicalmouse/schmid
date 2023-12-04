@@ -12,6 +12,7 @@ import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
 import { Profile } from 'layouts/Home/Profile';
+import { Mention } from 'layouts/Home/Mention';
 import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
@@ -26,9 +27,10 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const details = useRef();
+  const slide = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, details, slide];
     //const sections = [intro, projectOne, projectTwo, details];
 
     const sectionObserver = new IntersectionObserver(
@@ -68,7 +70,7 @@ export const Home = () => {
     <div className={styles.home}>
       <Meta
         title="Developer"
-        description="Design portfolio of Rafail Zhyhunov — a senior web and app developer."
+        description="Design portfolio of Schmid Payen — a senior web and app developer."
       />
       <Intro
         id="intro"
@@ -146,6 +148,7 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+      <Mention sectionRef={slide} id="slide" />
       <Footer />
     </div>
   );

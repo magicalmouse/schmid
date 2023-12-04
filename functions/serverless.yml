@@ -1,4 +1,4 @@
-service: hamish-portfolio
+service: Schmid-portfolio
 
 provider:
   name: aws
@@ -14,7 +14,6 @@ functions:
     events:
       - cloudFront:
           eventType: origin-response
-          origin: https://d39w4n5rrkxzvy.cloudfront.net
   api:
     handler: index.handler
     architecture: arm64

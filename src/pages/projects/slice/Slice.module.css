@@ -110,3 +110,27 @@
     top: -5%;
   }
 }
+
+.skillCard {
+  align-items: center;
+  border-radius: 5px;
+  color: #149ddd;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.skillIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.skillDesc {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}

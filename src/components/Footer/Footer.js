@@ -6,11 +6,14 @@ import styles from './Footer.module.css';
 export const Footer = ({ className }) => (
   <footer className={classes(styles.footer, className)}>
     <Text size="s" align="center">
-      <span className={styles.date}>
-        {`© ${new Date().getFullYear()} Rafail Zhyhunov.`}
-      </span>
-      <Link secondary className={styles.link} href="/humans.txt" target="_self">
-        Crafted by yours truly
+      <span className={styles.date}>{`© ${new Date().getFullYear()} Schmid Payen.`}</span>
+      <Link
+        secondary
+        className={styles.link}
+        href="https://mailto:schmid@magehire.com/"
+        target="_blank"
+      >
+        MageHire
       </Link>
     </Text>
   </footer>

@@ -16,7 +16,7 @@ Visual Studio Code
 Android Studio
 InteliJ
 
-github.com/magicalmouse
+https://github.com/goldengm
 
 _______________________________________________________________________________
 

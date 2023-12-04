@@ -3,6 +3,7 @@ import backgroundSpr from 'assets/spr-background.jpg';
 import imageSprLessonBuilderDark from 'assets/spr-lesson-builder-dark.jpg';
 import imageDentist from 'assets/dentist.png';
 import imageSkill from 'assets/skills.png';
+import imageService from 'assets/service.png';
 import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
@@ -24,7 +25,22 @@ import styles from './Slice.module.css';
 const title = 'What I work with My Skills';
 const description =
   'A senior web developer combines technical expertise with creativity, problem-solving skills, and a passion for delivering high-quality web solutions.';
-const roles = ['Web Development', 'App Development', 'UI/UX Design'];
+const roles = [
+  // 'Blockchain Development',
+  // 'Web Development',
+  // 'App Development',
+  // 'UI/UX Design',
+];
+const title1 = 'What I work with My Skills';
+const description1 = '';
+const roles1 = [
+  // 'Blockchain Development',
+  // 'Web Development',
+  // 'App Development',
+  // 'UI/UX Design',
+];
+
+// const skills = [{ label: 'TypeScript', image: [tsImage, tsImage] }];
 
 export const Slice = () => {
   return (
@@ -40,8 +56,41 @@ export const Slice = () => {
         <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection padding="top">
           <ProjectSectionContent>
+            {/* {skills.map(({ label, image }, index) => (
+              <div key={index} className="skillCard">
+                <ProjectImage
+                  srcSet={[image, image]}
+                  placeholder={backgroundSpr}
+                  alt="The Slice web application showing a selected user annotation."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
+                />
+                <div className="skillDesc">{label}</div>
+              </div>
+            ))} */}
             <ProjectImage
               srcSet={[imageSkill, imageSkill]}
+              placeholder={backgroundSpr}
+              alt="The Slice web application showing a selected user annotation."
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectHeader title={title1} description={description1} roles={roles1} />
+        <ProjectSection padding="top">
+          <ProjectSectionContent>
+            {/* {skills.map(({ label, image }, index) => (
+              <div key={index} className="skillCard">
+                <ProjectImage
+                  srcSet={[image, image]}
+                  placeholder={backgroundSpr}
+                  alt="The Slice web application showing a selected user annotation."
+                  sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
+                />
+                <div className="skillDesc">{label}</div>
+              </div>
+            ))} */}
+            <ProjectImage
+              srcSet={[imageService, imageService]}
               placeholder={backgroundSpr}
               alt="The Slice web application showing a selected user annotation."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}

@@ -16,12 +16,12 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/rafail-zhyhunov-783a6a294',
+    url: 'https://www.linkedin.com/in/schmid-payen-17695a120/',
     icon: 'linkedin',
   },
   {
     label: 'Github',
-    url: 'https://github.com/BritnessDev',
+    url: 'https://github.com/goldengm',
     icon: 'github',
   },
 ];

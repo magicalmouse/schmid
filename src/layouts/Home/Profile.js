@@ -1,6 +1,6 @@
-import profileImgLarge from 'assets/profile-large.png';
+import profileImgLarge from 'assets/profile-large.jpg';
 import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.png';
+import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
@@ -19,16 +19,15 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Rafail, currently I live in Zaporizhzhia working as a senior Web Developer. My
-      projects include web development, UX design, UI animations, and icon illustration.
-      Being comfortable with code allows me to rapidly prototype and validate experiences.
+      My name is Schmid Payen. I am a Full Stack Web Developer located in New York, USA.
+      I'm highly passionate when it comes to learning all sorts of things. That's what
+      keeps me going in life.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am highly passionate when it comes to learning all sorts of things. That is what
-      keeps me going in life. I look at coding as a never-ending challenge, and I will not
-      slow down until I feel like I achieved a level of mastery. Then the real fun begins.
-      Until that moment, it is all about self-discipline, continuous learning and
-      tremendous patience.
+      I look at coding as a never-ending challenge, and I won't slow down until I feel
+      like I achieved a level of mastery. Then the real fun begins. Until that moment,
+      it's all about self-discipline, continuous learning, and tremendous patience. I, in
+      one word: "DRIVEN".
     </Text>
   </Fragment>
 );
